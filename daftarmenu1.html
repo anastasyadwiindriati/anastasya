@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widht=device-widht, initial-scale-1, shrilink-to-fit-no">
+
+    <!--Bootstarp CSS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://stacpath.bootstrapcdn.com/bootstrap/4.5.0/css/
+    bootstrap.main.css" integrity="sha384-9altn8pC12UK9ghaDl411NQApFmC26EwAOH8WgZl5MYYxFf+NcPb1dKGjSk" crossorigin="anonymous"
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.main.css"
+    <link rel="stylesheet" type="text/css" href="index.css"
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.main.css"
+
+    
+  </head>
+<body>
+
+
+<!--Jumbotron-->
+<div class="jubotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1 class="display-7"><span class="font-weight-bold">Cofe Gamon</span></h1> 
+    <p class="class="font-weight-bold">Silahkan Pesan Menu sesuai Keinginan Hati Anda<br> enjoy Your Meal</p>
+  </div>
+</div>
+<!-- Akhir Jumbotron -->
+
+<!-- hero-->
+
+<!-- navbar -->
+<head>
+  <title>Building a Horizontal Navigation Bar</title>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: 'Arial', sans-serif;
+      }
+
+      .navbar {
+          display: flex;
+          position: sticky;
+          align-items: center;
+          justify-content: space-between;
+          top: 0px;
+          background: rgb(179, 151, 150);
+          background-blend-mode: darken;
+          background-size: cover;
+          color: white;
+          padding: 10px 20px;
+      }
+
+      .nav-list {
+          display: flex;
+          list-style: none;
+      }
+
+      .nav-list li {
+          margin-right: 20px;
+      }
+
+      .nav-list li:last-child {
+          margin-right: 0;
+      }
+
+      .nav-list li a {
+          text-decoration: none;
+          color: white;
+          font-size: 18px;
+          transition: color 0.3s ease-in-out;
+      }
+
+      .nav-list li a:hover {
+          color: #ffd700;
+          /* Change the color on hover */
+      }
+
+      .rightNav {
+          text-align: right;
+      }
+  </style>
+
+  <nav class="navbar">
+      <ul class="nav-list">
+          <li><a class="nav-link mr-4" href="index.html">HOME</a></li>
+          <li><a class="nav-link mr-4" href="daftarmenu1.html">DAFTAR MENU</a></li>
+          <li><a class="nav-link mr-4" href="#">LOGOUT</a></li>
+      </ul>
+  </nav>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styling for the menu */
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        .menu-item img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .menu-category {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+    </style>
+
+
+  <div class="container mt-5">
+    <h2 class="text-center">Daftar Menu</h2>
+
+
+    <!-- Appetizers Category -->
+    <div class="menu-category">
+        <h4>Menu :</h4>
+        <div class="row">
+            <div class="col-md-4 menu-item">
+                <div class="d-flex align-items-center">
+                <img src="seblak_spesial.webp" alt="Item 1">
+                <div>
+                    <h5>Seblak spesial</h5>
+                    <p>kerupuk,kembang cumi,sosis,odeng,dumpling,enoki.</p>
+                    <p><strong>Price: Rp 20,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Seblak spesial', 20000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="gacoan manis.jpg" alt="Item 2">
+                <div>
+                    <h5>Mie Gacoan</h5>
+                    <p>mie manis,ayam cintang,selada,sosis.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Chicken Satay', 30000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 3: Main Course -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="bakso.jpg" alt="Item 3">
+                <div>
+                    <h5>Bakso Jumbo</h5>
+                    <p>Bakso Jumbo beranakan pentol kecilndan sambal didalam .</p>
+                    <p><strong>Price: Rp 20,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('bakso beranak', 40000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 4: Main Course -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="rice bowl.jpg" alt="Item 4">
+                <div>
+                    <h5>Rice Bowl</h5>
+                    <p>Nasi putih dngan ayam mentega,selada.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Rice bowl', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 5: Drinks -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="mie goreng.jpg" alt="Item 5">
+                <div>
+                    <h5>Mie goreng</h5>
+                    <p>mie goreng toping udang ,dibungkus selada yang fress.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('mie goreng', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 6: Drinks -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="nasi uduk.jpg" alt="Item 6">
+                <div>
+                    <h5>Nasi Uduk</h5>
+                    <p>nasi uduk dengan toping telur suir dan ayam .</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('nasi kuning', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>  
+        
+        <!-- Item 7: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="nasgor.jpg" alt="Item 1">
+                <div>
+                    <h5>nasi goreng</h5>
+                    <p>nasi goreng toping telur,selada,dan ayam suir.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('nas goreng', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 8: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="ramen.jpg" alt="Item 2">
+                <div>
+                    <h5>Ramen</h5>
+                    <p>Mie Ramen dengan daging iris dn bumbu aroma khas jepang.</p>
+                    <p><strong>Price: Rp 30,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Ramen', 30000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 9: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="ayam geprek.jpg" alt="Item 1">
+                <div>
+                    <h5>Nasi Ayam Geprek</h5>
+                    <p>ayam geprek dengan sambal bawang.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Nasi geprek', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 10: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="mieayam.jpg" alt="Item 2">
+                <div>
+                    <h5>Mie ayam</h5>
+                    <p>Mie dan toping ayam dengan resep toko kami.</p>
+                    <p><strong>Price: Rp 8,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Mie Ayam', 8000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 11: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="wontan_cilioil.jpeg" alt="Item 1">
+                <div>
+                    <h5>Wonton Chili-oil</h5>
+                    <p>wonton dengan isian daging bumbu chili-oil.</p>
+                    <p><strong>Price: Rp 10,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Wonton Chili-oil', 10000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 12: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="wonton_kuah.jpg" alt="Item 2">
+                <div>
+                    <h5>Wonton Kuah Chili-oil</h5>
+                    <p>wonton isian daging kuah degan bumbu chili-oil.</p>
+                    <p><strong>Price: Rp 10,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Wonton Kuah', 10000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 13: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="dimsum.jpg" alt="Item 1">
+                <div>
+                    <h5>Dimsum</h5>
+                    <p>Dimsum dengan saos reseb andalan toko kami.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Spring Rolls', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 14: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="piscok.jpg" alt="Item 2">
+                <div>
+                    <h5>PisCok</h5>
+                    <p>Pisang rol coklat dengan toping coklt dan keju.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('PisCok', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 15: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="stick.jpg" alt="Item 1">
+                <div>
+                    <h5>Stick Daging</h5>
+                    <p>daging sapi yng di pangang dengan saus mentai dan toping kentang dan wortel.</p>
+                    <p><strong>Price: Rp 20,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Stick Daging', 50000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 16: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="es-teler.jpg" alt="Item 2">
+                <div>
+                    <h5>Ice Teler</h5>
+                    <p>alpukat,mutiara,natadecoco,jeli,boah nangka,nanas,selasih.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Ice Teler', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 17: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="alpukatkocok.jpg" alt="Item 1">
+                <div>
+                    <h5>Alpukat Kocok</h5>
+                    <p>ice kristal,alpukat,susu.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Alpukat Kocok', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 18: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="es_teh.jpg" alt="Item 2">
+                <div>
+                    <h5>Jasmin Tea</h5>
+                    <p>ice kristal,jasmintea.</p>
+                    <p><strong>Price: Rp 5,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('JasminTea', 5000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 19: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="grentea.jpg" alt="Item 1">
+                <div>
+                    <h5>Green Tea</h5>
+                    <p>Ice kristal,Tea hijau yang khas.</p>
+                    <p><strong>Price: Rp 8,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Ice Tea', 8000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 20: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="es_jeruk.jpg" alt="Item 2">
+                <div>
+                    <h5>Ice Jeruk</h5>
+                    <p>ice kristal, perasan jeruk yang super manis.</p>
+                    <p><strong>Price: Rp 5,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Ice Jeruk', 30000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 21: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="jus.jpg" alt="Item 1">
+                <div>
+                    <h5>Ice Jus</h5>
+                    <p>ice krstal, berbagai jus yang bisa anda pilih sesuai selera anda.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Ice Jus', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 22: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="lemon_tea.jpg" alt="Item 2">
+                <div>
+                    <h5>Lemon Tea</h5>
+                    <p>ice kistal , teh original yng di kasih irisan lemon .</p>
+                    <p><strong>Price: Rp 10,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Chicken Satay', 10000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 23: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="red.jpg" alt="Item 1">
+                <div>
+                    <h5>Ice Reat Felfvet</h5>
+                    <p>Ice kristal,ret felvet dan toping susu yang creme bngt.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Ice reat Felvet', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 24: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="matha.jpg" alt="Item 2">
+                <div>
+                    <h5>Macha</h5>
+                    <p>Ice kristal, macha yang pastinya nyegerin</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Ice Macha', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 25: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="es campur.jpg" alt="Item 1">
+                <div>
+                    <h5>Ice campur</h5>
+                    <p>Ice kristal,buah nanas,melon,semangka,rumput-laut.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Ice Buah', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 26: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="es oyen.jpg" alt="Item 2">
+                <div>
+                    <h5>Ice Oyen</h5>
+                    <p>Ice kristal,alpukat,mutiara,degan.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Ice Oyen Khas Bandung', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 27: Appetizers -->
+        <div class="col-md-4 menu-item">
+            <div class="d-flex align-items-center">
+                <img src="es doger.jpg" alt="Item 1">
+                <div>
+                    <h5>Es Doger</h5>
+                    <p>ice kristal,tape,roti,mutiara,susu,nangka,sirup.</p>
+                    <p><strong>Price: Rp 15,000</strong></p>
+                    <button class="btn btn-primary" onclick="addToCart('Es Doger', 15000)">BELI</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-container">
+        <h3>Your Cart</h3>
+        <table class="table cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price (Rp)</th>
+                    <th>Quantity</th>
+                    <th>Total (Rp)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems"></tbody>
+        </table>
+        <div class="text-right">
+            <h4>Total: Rp <span id="cartTotal">0</span></h4>
+        </div>
+        <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+    // Cart to store the items
+    let cart = [];
+
+    // Function to add items to the cart
+    function addToCart(itemName, itemPrice) {
+        // Check if the item is already in the cart
+        const existingItem = cart.find(item => item.name === itemName);
+        if (existingItem) {
+            existingItem.quantity += 1;
+            existingItem.total = existingItem.quantity * existingItem.price;
+        } else {
+            cart.push({
+                name: itemName,
+                price: itemPrice,
+                quantity: 1,
+                total: itemPrice
+            });
+        }
+        updateCart();
+    }
+
+    // Function to update the cart display
+    function updateCart() {
+        const cartItems = document.getElementById('cartItems');
+        const cartTotal = document.getElementById('cartTotal');
+        cartItems.innerHTML = '';
+
+        let total = 0;
+        cart.forEach(item => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${item.name}</td>
+                <td>${item.price}</td>
+                <td>${item.quantity}</td>
+                <td>${item.total}</td>
+                <td><button class="btn btn-danger btn-sm" onclick="removeItem('${item.name}')">Remove</button></td>
+            `;
+            cartItems.appendChild(row);
+            total += item.total;
+        });
+
+        cartTotal.textContent = total;
+    }
+
+    // Function to remove an item from the cart
+    function removeItem(itemName) {
+        cart = cart.filter(item => item.name !== itemName);
+        updateCart();
+    }
+
+    // Function to clear the cart
+    function clearCart() {
+        cart = [];
+        updateCart();
+    }
+</script>
+
+<!-- Awal Footer -->
+    <hr class="Footer">
+    <div class="container">
+      <div class="row Footer-body">
+      <div class="copyright">
+          <strong>copyright</strong> <i class="far fa-copyright"></i> 2024 - Disignet by Anastasya</p>
+      </div>
+      </div>
+    
+      <div class="col-md-6 d-flax justyfy-content-end">
+      <div class="icon.contact">
+        <label class="font-weight-bold">Follow Us</label>
+      <a href="#"><img src="" class="mr-3 ml-4" data-toggle="tooltip" title="twiter"></a>
+      <a href="#"><img src="" class="mr-3 ml-4" data-toggle="tooltip" title="whatsapp"></a>
+      <a href="#"><img src="" class="mr-3 ml-4" data-toggle="tooltip" title="facebook"></a>
+    </div>
+      </div>
+    </div>
+  </div>
+<!-- Akhir Footer -->
+
+
+<!-- Optiona JavaScript -->
+<!-- jQuery first, then popper.js then Bootstrap JS -->
+ <script scr="" integrity="" crossorigin="" ></script>
+ <script scr="" integrity="" crossorigin="" ></script>
+ <script scr="" integrity="" crossorigin="" ></script>
+ <script src="" ></script>
+ <script src="" ></script>
+
+</body>
+</html>
